@@ -1,0 +1,105 @@
+\documentclass[12pt,a4paper,final]{report}
+\usepackage[utf8]{inputenc}
+\usepackage[T2A]{fontenc}
+\usepackage[russian]{babel}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{bm}
+\usepackage[left=3cm,right=3cm,top=2cm,bottom=2cm]{geometry}
+
+\usepackage{mathtools}
+\newcommand\iid{\stackrel{\mathclap{\normalfont\mbox{iid}}}{\sim}}
+\newcommand{\hbv}{\hat{\mathbf{v}}}
+\newcommand{\seh}{\widehat{\text{se}}}
+\newcommand{\sew}{\widetilde{\text{se}}}
+\newcommand{\X}{\mathbf X}
+\newcommand{\tx}[1]{\text{#1}}
+\newcommand{\rse}{\text{RSE}}
+\newcommand{\betah}{\hat \beta}
+\newcommand{\rloess}{\hat{r}_\tx{loess}}
+\newcommand{\rquad}{\hat{r}_\tx{quad}}
+\newcommand{\thetahat}{\hat \theta}
+\newcommand{\bca}{\mathrm{BC}_a}
+\newcommand{\abc}{\mathrm{ABC}}
+\newcommand{\prob}[1]{\mathrm{Prob}\left\{#1\right\}}
+\newcommand{\xest}[1]{x_1^*,x_2^*,\ldots,x_{#1}^*}
+\newcommand{\xes}[1]{x_1,x_2,\ldots,x_{#1}}
+\newcommand{\ies}[1]{1,2,\ldots,#1}
+\newcommand{\equd}{\dot{=}}
+\newcommand{\summ}[2]{\sum_{#1}^{#2}}
+\newcommand{\mbf}{\mathbf}
+\newcommand{\what}[1]{\widehat{#1}}
+
+
+\setcounter{chapter}{1}
+
+
+\title{Введение в Бутстреп}
+% \author{st013309}
+\date{2021}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+
+\chapter{Точность выборочного среднего }
+\input{1/1}
+
+\chapter{Случайные выборки и вероятности}
+\input{2/1}
+\input{2/2}
+\input{2/3}
+
+\chapter{Эмпирическая функция распределения и принцип плагина}
+\input{3/1}
+\input{3/2}
+\input{3/3}
+
+\chapter{Стандартные ошибки и оценки стандартных ошибок}
+\input{4/1}
+\input{4/2}
+\input{4/3}
+
+\chapter{Бутстреп оценка стандартной ошибки}
+\input{5/1}
+\input{5/2}
+\input{5/3}
+\input{5/4}
+\input{5/5}
+
+\chapter{Бутстреп и стандартные ошибки: некоторые примеры}
+\input{6/1}
+\input{6/2}
+\input{6/63}
+\input{6/64}
+
+\setcounter{chapter}{9}
+\chapter{Оценки смещения}
+\input{10/1}
+\input{10/2}
+\input{10/3}
+\input{10/4}
+\input{10/5}
+\input{10/6}
+
+\chapter{Метод складного ножа}
+\input{11/1}
+\input{11/2}
+\input{11/3}
+\input{11/4}
+\input{11/5}
+\input{11/6}
+\input{11/7}
+
+\setcounter{chapter}{13}
+\chapter{Улучшенные бутстреп-доверительные интервалы}
+\input{14/1}
+\input{14/2}
+\input{14/3}
+\input{14/4}
+\input{14/5}
+
+\end{document}
