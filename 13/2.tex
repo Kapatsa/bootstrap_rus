@@ -1,12 +1,12 @@
 \section{Интервалы основанные на стандартном нормальном распределении}
-Пусть $\widehat{\theta}$ есть оценка параметра $\theta$ методом подстановки, $\widehat{\text{se}}$ его оценка стандартной ошибки. Рассмотрим стандартный нормальный доверительный интервал $[ \widehat{\theta} - z^{(1 - \alpha)} \cdot \widehat{\text{se}}, \widehat{\theta} - z^{(\alpha)}\cdot \widehat{\text{se}}]$. Граничные точки этого интервала можно описать способом, который особенно удобен для бутстреп вычислений. Пусть $\widehat{\theta}^{*}$  есть случайная величина, взятая из распределения $\mathrm{N}(\widehat{\theta}, \widehat{\text{se}}^{*})$,
+Пусть $\widehat{\theta}$ есть оценка параметра $\theta$ методом подстановки, $\widehat{\text{se}}$ оценка его стандартной ошибки. Рассмотрим стандартный нормальный доверительный интервал $[ \widehat{\theta} - z^{(1 - \alpha)} \cdot \widehat{\text{se}}, \widehat{\theta} - z^{(\alpha)}\cdot \widehat{\text{se}}]$. Граничные точки этого интервала можно описать способом, который особенно удобен для бутстреп вычислений. Пусть $\widehat{\theta}^{*}$  есть случайная величина, взятая из распределения $\mathrm{N}(\widehat{\theta}, \widehat{\text{se}}^{*})$:
 \begin{gather}\label{13.1}
 \widehat{\theta}^{*}\sim \mathrm{N}(\widehat{\theta}, \text{se}^{2}).
 \end{gather}
-Тогда $\widehat{\theta}_{\text{lo}} = \widehat{\theta}  - z^{(1 - \alpha)} \cdot \widehat{\text{se}} $ и $\widehat{\theta}_{\text{up}} = \widehat{\theta}  - z^{(\alpha)} \cdot \widehat{\text{se}}$  являются $100\alpha$ и $100(1 - \alpha)$ процентилями $\widehat{\theta}^{*}$. Другми словами:
+Тогда $\widehat{\theta}_{\text{lo}} = \widehat{\theta}  - z^{(1 - \alpha)} \cdot \widehat{\text{se}} $ и $\widehat{\theta}_{\text{up}} = \widehat{\theta}  - z^{(\alpha)} \cdot \widehat{\text{se}}$  являются $100\cdot \alpha$ и $100 \cdot (1 - \alpha)$ процентилями $\widehat{\theta}^{*}$. Другми словами:
 
 \begin{gather}\label{13.2}
-\widehat{\theta}_{\text{lo}} = \widehat{\theta}^{*(\alpha)} = 100 \cdot \alpha \ \text{процентиль распределения} \  \widehat{\theta}^{*} \\
+\widehat{\theta}_{\text{lo}} = \widehat{\theta}^{*(\alpha)} = 100 \cdot \alpha \ \text{процентиль распределения} \  \widehat{\theta}^{*}, \\
 \widehat{\theta}_{\text{up}} = \widehat{\theta}^{*(1 - \alpha)} = 100 \cdot (1 - \alpha) \  \text{процентиль распределения} \  \widehat{\theta}^{*}.
 \end{gather}
 
